@@ -1,0 +1,13 @@
+.book-list :hover {
+    font-weight: bolder;
+    color: #b7a57a;
+}
+figure {
+    width: 20%;
+    float: left;
+    margin: 10px;
+}
+img {
+    width: 100%;
+    margin: auto;
+}
