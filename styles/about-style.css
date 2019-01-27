@@ -11,6 +11,9 @@ img {
     width: 100%;
     margin: auto;
 }
-section {
-    background-color: #d3d3d3;
+nav {
+    border-width: 0px 2px 2px 2px;
+}
+.main-footer {
+    border-width: 2px;
 }
