@@ -1,3 +1,9 @@
+section {
+    background-color: whitesmoke;
+    padding: 0px 5px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
 .book-list :hover {
     font-weight: bolder;
     color: #b7a57a;
@@ -12,8 +18,18 @@ img {
     margin: auto;
 }
 nav {
-    border-width: 0px 2px 2px 2px;
+
+    margin-bottom: 0px;
 }
 .main-footer {
     border-width: 2px;
+}
+.clearfix::after 
+{
+    content:"";
+    display: block;
+    clear: both;
+}
+h2 {
+    margin-top: 0px;
 }
