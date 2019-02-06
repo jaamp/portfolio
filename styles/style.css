@@ -1,7 +1,8 @@
 body {
-    background-color:black;
+    background-color: black;
     margin: 0 10% 0 10%;
 }
+
 nav {
     background-color: #b7a57a;
     color: #4b2e83;
@@ -9,52 +10,64 @@ nav {
     border-color: #4b2e83;
     border-width: 0px 2px 0px 2px;
     border-style: solid;
-    margin-top: 0px;  
+    margin-top: 0px;
 }
+
 ul {
     list-style-type: square;
 }
+
 h3 {
-    font-family: cursive;
+    font-family: 'MedievalSharp', cursive;
 }
+
+div.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
 .main-section {
-    display: table-cell;
-    padding: 0px 5px 0px 5px;
+    padding: 0px 15px 0px 15px;
     width: 75%;
     border-color: #4b2e83;
     border-width: 2px 0px 2px 2px;
     border-style: solid;
     background-color: whitesmoke;
 }
+
 .main-aside {
-    display: table-cell;
-    width: 20%;
+    width: 25%;
     background-color: #b7a57a;
     color: #4b2e83;
-    padding: 5px 0px 5px 0px;
     border-color: #4b2e83;
     border-width: 0px 2px 0px 2px;
     border-style: solid;
-    text-align: center;
 }
+
 .nav-ul li {
     display: inline;
 }
-.nav-ul li~li {
-    border-left: 2px solid #4b2e83;
-    padding-left: 5px;
-    padding-right: 5px;
-}
+
+    .nav-ul li::after {
+        content: "/";
+    }
+
+    .nav-ul li ~ li {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
 .a-text a:link, a:visited {
     color: #4b2e83;
 }
+
 .main-header {
     background-color: #4b2e83;
     color: #b7a57a;
     margin: auto;
     text-align: center;
-    padding: 20px 0px 20px 0px;
 }
+
 .main-footer {
     background-color: #b7a57a;
     color: #4b2e83;
@@ -63,15 +76,28 @@ h3 {
     border-width: 0px 2px 2px 2px;
     border-style: solid;
     text-align: center;
-    clear: both;
-}
-.table-container {
-    display: table;
-}
-.table-row {
-    display: table-row;
-}
-.aside-ul li {
-    list-style-type: none;
 }
 
+.aside-h3 {
+    text-align: center;
+}
+
+.fa-css3-alt {
+    color: #4b2e83;
+}
+
+    .fa-css3-alt:hover {
+        color: red;
+    }
+
+.fa-html5 {
+    color: #4b2e83;
+}
+
+    .fa-html5:hover {
+        color: blue;
+    }
+
+.aside-ul {
+    list-style-type: none;
+}

@@ -1,35 +1,47 @@
 section {
     background-color: whitesmoke;
-    padding: 0px 5px;
+    padding: 10px 100px;
     border-left: 2px solid;
     border-right: 2px solid;
 }
-.book-list :hover {
-    font-weight: bolder;
-    color: #b7a57a;
+
+.book-list {
+    list-style-type: none;
 }
+
+    .book-list :hover {
+        font-weight: bolder;
+        color: #b7a57a;
+    }
+
+.fas {
+    color: #4b2e83;
+}
+
 figure {
     width: 20%;
-    float: left;
     margin: 10px;
 }
+
 img {
     width: 100%;
     margin: auto;
 }
-nav {
 
+nav {
     margin-bottom: 0px;
 }
+
 .main-footer {
     border-width: 2px;
 }
-.clearfix::after 
-{
-    content:"";
-    display: block;
-    clear: both;
+
+.div-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
+
 h2 {
     margin-top: 0px;
 }
