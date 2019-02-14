@@ -45,3 +45,58 @@ nav {
 h2 {
     margin-top: 0px;
 }
+
+.sprite {
+	width: 20%;
+    height: 123px;
+    position: relative;
+    display: inline-block;
+}
+
+.sprite .sprite-front {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.sprite:hover .sprite-front{
+    display: inline;
+}
+
+.back, .joker {
+    background: url('/images/cards.jpg') ;
+    background-repeat: no-repeat;
+    width: 20%;
+}
+
+.back {
+	background-position:  -809px -527px;
+    height: 256px;
+}
+
+.joker {
+    background-position:  -608px -527px;
+    height: 256px;
+}
+
+.lines {
+    width: 20%;
+}
+
+.ul-lines{
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.ul-lines :nth-child(1n + 2) {
+    background: #b7a57a;
+}
+
+.ul-lines :nth-child(odd) {
+    background: #4b2e83;
+}
+
