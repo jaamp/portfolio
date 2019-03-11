@@ -5,7 +5,8 @@
         <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="styles/style.css" rel="stylesheet">
-        <title>Portfolio Home</title>
+        <link href="styles/contact-style.css" rel="stylesheet">
+        <title>Contact Me</title>
     </head>
     <body>
         <header>
@@ -14,49 +15,57 @@
         <nav>
             <ul class="nav-ul">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
                     <a href="about.html">About Me</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact Me</a>
+                   <a href="#">Contact Me</a>
                 </li>
             </ul>
         </nav>
         <div class="flex-container">
             <section class="main-section">
-                <h2>Portfolio Projects</h2>
-                <article>
-                    <h3>Completed Projects</h3>
-                    <p>The below list is my completed projects from the UW HTML5 100A course.  You can click the link to go to the GitHub repository where the project is stored.  I hope you enjoy!</p>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/jaamp/semantic-elements">Assignment 1 - Semantic Elements</a>  <img src="images/1.png" width="40" alt="tan square with red number one centered">
-                        </li>
-                        <li>
-                            <a href="https://github.com/jaamp/portfolio">Assignment 2 - Portfolio</a>  <img src="images/2.png" width="40" alt="tan square with red number two centered">
-                        </li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Current Projects</h3>
-                    <p>The below list is my current working projects from the UW HTML5 100A course.  Once the project is submitted and graded, I will move it to the Completed Projects list and add the GitHub link.</p>
-                    <ul>
-                        <li>
-                            Assignment 3 - Adding Style to Web Pages  <img src="images/3.png" width="40" alt="tan square with red number three centered">
-                        </li>
-                    </ul>
-                </article>
-                <article>
-                    <h3>Future Projects</h3>
-                    <p>The below list is my future projects from the UW HTML5 100A course.  Once I begin development, I will move it to the Current Projects list.</p>
-                    <ul>
-                        <li>
-                            Assignment 4 - Working Title in Development  <img src="images/4.png" width="40" alt="tan square with red number four centered">
-                        </li>
-                    </ul>
-                </article>
+                <h2>Contact Me</h2>
+                <form method="GET">
+                    <label>
+                        First Name:
+                        <input type="text" required name="fname">
+                    </label>
+                    <label>
+                        Last Name:
+                        <input type="text" required name="lname">
+                    </label>
+                    <label>
+                        Phone:
+                        <input type="tel" name="phone">
+                    </label>
+                    <fieldset>
+                        <input type="radio" id="home" name="phone" value="home">
+                            <label for="home">Home</label>
+                        <input type="radio" id="mobile" name="phone" value="mobile">
+                            <label for="mobile">Mobile</label>
+                    </fieldset>
+                    <label>
+                        Email:
+                        <input type="email" name="email">
+                    </label>
+                    <label>Interest
+                    <select name="interests">
+                        <optgroup label="Select one or more">
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="javascript">JavaScript</option>
+                        </optgroup>
+                    </select>
+                </label>
+                    <label>Message:
+                    <textarea rows="4" cols="50">
+                    </textarea>
+                    </label>
+                    <input type="submit" value="Submit">
+                </form>
             </section>
             <aside class="main-aside">
                 <article>
