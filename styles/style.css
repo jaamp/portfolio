@@ -48,17 +48,21 @@ div.flex-container {
     display: inline;
 }
 
-    .nav-ul li::after {
-        content: "/";
-    }
-
     .nav-ul li ~ li {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 40px;
     }
 
 .a-text a:link, a:visited {
     color: #4b2e83;
+}
+
+.hidden {
+    position: relative;
+    left: -10000px;
+    top: auto;
+}
+.hidden:focus {
+    left: 0px;
 }
 
 .main-header {
@@ -100,4 +104,12 @@ div.flex-container {
 
 .aside-ul {
     list-style-type: none;
+}
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
